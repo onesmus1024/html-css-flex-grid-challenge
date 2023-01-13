@@ -1,0 +1,112 @@
+
+
+.container{
+    padding: 10%;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "user task task task"
+  
+    ;
+}
+.user{
+    grid-area: user;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 hsl(0, 0%, 0%);
+}
+.user .user-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.user .duration{
+    padding: 20px;
+}
+.task{
+    display: flex;
+    grid-area: task;
+    
+
+}
+.task-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.user .user-detail{
+    background-color: hsl(246, 80%, 60%);
+    padding: 20px;
+}
+.task{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "task-card-work task-card-play task-card-study"
+    "task-card-exercise task-card-social task-card-self-care"
+    ;
+}
+.user .duration{
+    color: white;
+}
+
+.task-card-work{
+    background-color: hsl(15, 100%, 70%);
+    height: fit-content;
+    padding-top: 5%;
+    grid-area: task-card-work;
+}
+
+.task-card-play{
+    background-color: hsl(195, 74%, 62%);
+    height: fit-content;
+    padding-top: 5%;
+    grid-area: task-card-play;
+}
+.task-card-study{
+    background-color: hsl(348, 100%, 68%);
+    height: fit-content;
+    padding-top: 5%;
+}
+.task-card-exercise{
+    background-color: hsl(145, 58%, 55%);
+    height: fit-content;
+    padding-top: 5%;
+    grid-area: task-card-exercise;
+}
+.task-card-social{
+    background-color: hsl(264, 64%, 52%);
+    height: fit-content;
+    padding-top: 5%;
+    grid-area: task-card-social;
+}
+.task-card-self-care{
+    background-color: hsl(43, 84%, 65%);
+    height: fit-content;
+    padding-top: 5%;
+    grid-area: task-card-self-care;
+}
+.task-card-work, .task-card-play, .task-card-study, .task-card-exercise, .task-card-social, .task-card-self-care{
+    border-radius: 10px;
+   
+}
+
+.task-card-work .task-content,.task-card-play .task-content,.task-card-study .task-content,.task-card-exercise .task-content,.task-card-social .task-content,.task-card-self-care .task-content{
+    background-color:  hsl(226, 43%, 10%);
+    color: white;
+    height: 200px;
+    box-shadow: 0 0 10px 0 hsl(0, 0%, 0%);
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+}
