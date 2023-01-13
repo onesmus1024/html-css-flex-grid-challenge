@@ -18,10 +18,14 @@
   
     ;
 }
+.dots{
+    cursor: pointer;
+}
 .user{
     grid-area: user;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 hsl(0, 0%, 0%);
+
 }
 .user .user-detail{
     display: flex;
@@ -40,8 +44,12 @@
 .user .report-for{
     color: white;
     font-size: 15px;
-    opacity: 0.5;
     text-align: left;
+}
+.user .user-detail{
+    background-color: hsl(246, 80%, 60%);
+    padding: 20px;
+    
 }
 
 .task{
@@ -58,11 +66,12 @@
     
 }
 
-
-.user .user-detail{
-    background-color: hsl(246, 80%, 60%);
-    padding: 20px;
+.task-header .task-title{
+    color: white;
+    font-size: 18px;
 }
+
+
 .task{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -78,38 +87,62 @@
 
 .task-card-work{
     background-color: hsl(15, 100%, 70%);
+    background-image: url(./images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
     height: fit-content;
-    padding-top: 5%;
+    padding-top: 20%;
     grid-area: task-card-work;
 }
 
 .task-card-play{
     background-color: hsl(195, 74%, 62%);
+    background-image: url(./images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
     height: fit-content;
-    padding-top: 5%;
+    padding-top: 20%;
     grid-area: task-card-play;
 }
 .task-card-study{
     background-color: hsl(348, 100%, 68%);
+    background-image: url(./images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
     height: fit-content;
-    padding-top: 5%;
+    padding-top: 20%;
 }
 .task-card-exercise{
     background-color: hsl(145, 58%, 55%);
+    background-image: url(./images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
     height: fit-content;
-    padding-top: 5%;
+    padding-top: 20%;
     grid-area: task-card-exercise;
 }
 .task-card-social{
     background-color: hsl(264, 64%, 52%);
+    background-image: url(./images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
     height: fit-content;
-    padding-top: 5%;
+    padding-top: 20%;
     grid-area: task-card-social;
 }
 .task-card-self-care{
     background-color: hsl(43, 84%, 65%);
+    background-image: url(./images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
     height: fit-content;
-    padding-top: 5%;
+    padding-top: 20%;
     grid-area: task-card-self-care;
 }
 .task-card-work, .task-card-play, .task-card-study, .task-card-exercise, .task-card-social, .task-card-self-care{
