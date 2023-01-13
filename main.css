@@ -9,8 +9,12 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+    height: 100vh;
+    align-items: space-between;
     grid-template-areas: 
     "user task task task"
+    "user task task task";
+    height: 30%;
   
     ;
 }
@@ -30,6 +34,11 @@
 .user .duration{
     padding: 20px;
 }
+.user .name{
+    color: white;
+    font-size: 20px;
+}
+
 .task{
     display: flex;
     grid-area: task;
@@ -109,4 +118,13 @@
     box-shadow: 0 0 10px 0 hsl(0, 0%, 0%);
     padding: 0 20px 0 20px;
     border-radius: 10px;
+}
+
+.hours{
+    font-size: 20px;
+}
+.last-week{
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.5;
 }
